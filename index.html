@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Капля Дождя: Регистрация</title>
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css"/>  	
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   </head>
+   <body>
+      <div class="logo">
+         <h1>Капля <i class='fa-solid fa-droplet'></i> Дождя</h1>
+      </div>
+      <div class="wrapper">
+         <div class="title-text">
+            <div class="title login">
+               Логин
+            </div>
+            <div class="title Register">
+               Регистрация
+            </div>
+         </div>
+         <div class="form-container">
+            <div class="slide-controls">
+               <input type="radio" name="slide" id="login" checked>
+               <input type="radio" name="slide" id="register">
+               <label for="login" class="slide login">Логин</label>
+               <label for="Register" class="slide signup">Регистрация </label>
+               <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+               <form action="index2.html" class="login">
+                  <div class="field">
+                     <input type="text" placeholder="Имя" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Пароль" required>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Войти">
+                  </div>
+               </form>
+               <form action="index2.html" class="Register">
+                  <div class="field">
+                     <input type="text" placeholder="Имя" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Пароль" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Подтвердите пароль" required>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Зарегистрироваться">
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <script src="script2.js"></script>
+   </body>
+</html>

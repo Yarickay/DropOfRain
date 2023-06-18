@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Капля Дождя: Оплата</title>
+      <script src="script2.js"></script>
+      <link href="style.css" media="screen" rel="stylesheet" type="text/css"/>  	
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   </head>
+   <body>
+    <div class="logo">
+      <h1>Капля <i class='fa-solid fa-droplet'></i> Дождя</h1>
+   </div>
+      <div class="wrapper">
+         <div class="title-text">
+            <div class="title login">
+               Введите данные:
+            </div>
+         </div>
+            <div class="form-inner">
+               <form action="index4.html" class="login">
+                  <h3 style="color:white; margin: 15px; margin-left: 0px;">Номер карты</h3>
+                     <div class="field">
+                     <input id="card" type="tel" required>
+                  </div>
+                  <h3 style="color:white; margin: 15px; margin-left: 0px;">ММ/ГГ <a href="https://plusfinance.ru/wiki/chto-takoe-mm-gg-na-bankovskoj-karte/" target="_blank" style="color: white;">?</a></h3>
+                     <div class="field">
+                        <input id="day" type="tel" required>
+                     </div>
+                  <h3 style="color:white; margin: 15px; margin-left: 0px;">Кард холдер <a href="https://brobank.ru/cardholder/" target="_blank" style="color: white;">?</a></h3>
+                  <div class="field">
+                     <input type="tel" required>
+                  </div>
+               <h3 style="color:white; margin: 15px; margin-left: 0px;">CVC <a href="https://mail.ru/search?text=%D0%93%D0%B4%D0%B5%20%D0%BD%D0%B0%D1%85%D0%BE%D0%B4%D0%B8%D1%82%D1%81%D1%8F%20CVC%20%D0%BD%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9%20%D0%BA%D0%B0%D1%80%D1%82%D0%B5&mstatid&type=web&q=card%2Bholder&&fr=ch_omnibox&serp_path=%2Fsearch%2F" target="_blank" style="color: white;">?</a></h3>
+                  <div class="field">
+                     <input id="cvc" type="tel" required>
+                  </div>
+               <h3 style="color:white; margin: 15px; margin-left: 0px;">Сумма Пожертвования 
+                  <select class="amount" style="margin-left: 7px;">
+                  <option value="Choice">Выбрать</option>
+                  <option value="Rub">Рубль ₽</option>
+                  <option value="Dol">Доллар $</option>
+                  <option value="Eur">Евро €</option>
+               </select></h3>
+               <div class="field">
+               <input type="number" required>
+                  </div>
+                     <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Пожертвовать">
+                     </div>
+               </form>
+            </div>
+         </form>
+      </div>
+   </div>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="numbermask.js"></script>
+      <script>
+        $(function () {
+          $('#day').numbermask({
+              mask: "##/##"
+          });
+      
+          $('#card').numbermask({
+              mask: "####-####-####-####"
+          });
+      
+          $('#cvc').numbermask({
+              mask: "###"
+          });
+      });
+      </script>
+   </body>
+</html>
